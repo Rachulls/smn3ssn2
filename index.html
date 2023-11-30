@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceptos</title>
+  </head>
+  <header>
+    <h1>LOS 4 CONCEPTOS MAS IMPORTANTES</h1>
+  </header>
+  <body>
+    <article>
+      <h2>Selectores</h2>
+      <p>
+        Los selectores permiten seleccionar elementos que se verán afectados por uno o más estilos.
+      </p>
+      <ul>
+        <li>Selector de tipo: Selecciona a todos los elementos de un solo tipo.</li>
+      </ul>
+      <ol>Ejm: p{ color : red; }</ol>
+      <ul>
+        <li>Selector de clase: Selecciona a elementos que tiene atributo 'class'.</li>
+      </ul>
+    </ul>
+    <ol>Ejm: .ejemplo-clase{ color : red; }</ol>
+    <ul>
+      <li>Selector de ID: Selecciona a elementos que tiene atributo 'id'.</li>
+    </ul>
+    <ol>Ejm: #ejemplo-id{ color : red; }</ol>
+    </article>
+    <article>
+      <h2>Herencia</h2>
+      <p>Con herencia se refiere a la capacidad de los elementos hijos de heredar ciertos estilos de sus elementos padre.</p>
+      <ul>
+        <li>body {color: blue;} Los elementos hijos del <body> heredarán el color azul.</li>
+      </ul>
+    </article>
+    <article>
+      <h2>Cascada</h2>
+      <p>En este caso las reglas son más específicas, el que aparece más abajo en el código tienen más peso y, por lo tanto, anulan reglas menos específicas o que aparecen antes.</p>
+    </article>
+    <article>
+      <h2>Especificidad</h2>
+      <p>La especificidad se refiere a la prioridad de una regla en función de su nivel de detalle.</p>
+      <li>Ejm de cascada y especificidad:</li>
+      <ul>
+        p {
+            color: red;
+        }
+      </ul>
+      <ul>.parrafo {
+            color: blue;
+            font-weight: bold;
+        }
+      </ul>
+      <ul>#contenedor p {
+            color: green;
+        }
+      </ul>
+      <ol>
+        <li>La regla general p { color: red; } establece el color del texto de todos los elementos 'p' en rojo.</li>
+        <li>La regla más específica .parrafo { color: blue; font-weight: bold; } establece el color del texto en azul y la negrita para los elementos con la clase "parrafo".</li>
+        <li>La regla #contenedor p { color: green; } es aún más específica, ya que afecta a los elementos 'p' dentro del elemento con el id "contenedor" y establece el color del texto en verde.</li>
+        </ol>
+    </article>
+  </body>
+</html>
